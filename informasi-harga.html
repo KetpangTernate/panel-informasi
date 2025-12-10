@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Komoditas | Dinas Ketahanan Pangan Kota Ternate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .page-container {
+            padding: 60px 0;
+        }
+
+        .page-title {
+            text-align: center;
+            color: var(--primary-green);
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .table-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .table-box h3 {
+            color: var(--primary-green);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th {
+            background: var(--primary-green);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        .good { color: #2e7d32; font-weight: 600; }
+        .warning { color: #f9a825; font-weight: 600; }
+        .danger { color: #c62828; font-weight: 600; }
+
+        .up { color: #2e7d32; font-weight: 600; }
+        .down { color: #c62828; font-weight: 600; }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background: var(--primary-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--light-green);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container page-container">
+
+    <h1 class="page-title">Informasi Ketersediaan & Harga Komoditas</h1>
+    <p class="page-subtitle">Data pemantauan pangan Kota Ternate</p>
+
+    <!-- ============================ -->
+    <!--       TABEL KETERSEDIAAN     -->
+    <!-- ============================ -->
+    <div class="table-box">
+        <h3>Ketersediaan Komoditas (Juta Ton)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Komoditas</th>
+                    <th>Ketersediaan</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Beras</td><td>32</td><td class="good">Aman</td></tr>
+                <tr><td>Jagung</td><td>19</td><td class="good">Aman</td></tr>
+                <tr><td>Kedelai</td><td>0.4</td><td class="warning">Rendah</td></tr>
+                <tr><td>Gula Pasir</td><td>2.2</td><td class="good">Aman</td></tr>
+                <tr><td>Minyak Goreng</td><td>7.5</td><td class="good">Aman</td></tr>
+                <tr><td>Daging Sapi</td><td>0.45</td><td class="warning">Menipis</td></tr>
+                <tr><td>Daging Ayam</td><td>3.5</td><td class="good">Aman</td></tr>
+                <tr><td>Telur Ayam</td><td>2.8</td><td class="good">Aman</td></tr>
+                <tr><td>Cabai</td><td>1.2</td><td class="warning">Fluktuatif</td></tr>
+                <tr><td>Bawang Merah</td><td>1.0</td><td class="good">Aman</td></tr>
+                <tr><td>Bawang Putih</td><td>0.9</td><td class="warning">Menipis</td></tr>
+                <tr><td>Ikan</td><td>3.1</td><td class="good">Aman</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ============================ -->
+    <!--        TABEL HARGA           -->
+    <!-- ============================ -->
+    <div class="table-box">
+        <h3>Harga Komoditas (Rp/kg)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Komoditas</th>
+                    <th>Harga Saat Ini</th>
+                    <th>Perubahan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Beras Medium</td><td>14.200</td><td class="up">+200</td></tr>
+                <tr><td>Beras Premium</td><td>16.800</td><td class="up">+300</td></tr>
+                <tr><td>Jagung</td><td>6.400</td><td class="up">+100</td></tr>
+                <tr><td>Kedelai</td><td>12.000</td><td class="up">+150</td></tr>
+                <tr><td>Gula Pasir</td><td>15.200</td><td class="up">+100</td></tr>
+                <tr><td>Minyak Goreng</td><td>15.200</td><td class="up">+200</td></tr>
+                <tr><td>Telur Ayam</td><td>27.000</td><td class="up">+100</td></tr>
+                <tr><td>Daging Ayam</td><td>36.500</td><td class="up">+500</td></tr>
+                <tr><td>Daging Sapi</td><td>133.000</td><td class="up">+500</td></tr>
+                <tr><td>Cabai Merah</td><td>58.000</td><td class="up">+800</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <a href="index.html#data" class="back-btn">← Kembali ke Halaman Statistik</a>
+
+</div>
+
+</body>
+</html>

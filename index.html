@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<!-- Mobile Menu Toggle -->
+<button class="menu-toggle">
+    <i class="fas fa-bars"></i>
+</button>
+
+<!-- Mobile Slide Menu -->
+<div class="mobile-nav">
+    <button class="close-menu"><i class="fas fa-times"></i></button>
+    <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#profile">Profil Lembaga</a></li>
+        <li><a href="#programs">Program & Kegiatan</a></li>
+        <li><a href="#data">Data Ketahanan Pangan</a></li>
+        <li><a href="#services">Layanan Publik</a></li>
+        <li><a href="#news">Berita & Pengumuman</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</div>
+
+<!-- Overlay gelap -->
+<div class="nav-overlay"></div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinas Ketahanan Pangan Kota Ternate</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                    <div class="logo-text">Panel Informasi</div>
+                </div>
+                
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#profile">Profil Lembaga</a></li>
+                    <li><a href="#programs">Program & Kegiatan</a></li>
+                    <li><a href="#data">Data Ketahanan Pangan</a></li>
+                    <li><a href="#services">Layanan Publik</a></li>
+                    <li><a href="#news">Berita & Pengumuman</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>DINAS KETAHANAN PANGAN KOTA TERNATE</h1>
+            <p>Memastikan Ketersediaan, Keterjangkauan, dan Keamanan Pangan untuk Seluruh Masyarakat</p>
+            <div class="hero-buttons">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="profile">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Visi & Misi</h3>
+                    <p>Visi kami adalah terwujudnya ketahanan pangan nasional yang berdaulat, mandiri, dan berkelanjutan. Misi kami adalah menyediakan pangan yang cukup, aman, berkualitas, dan terjangkau bagi seluruh rakyat Indonesia.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Tugas & Fungsi</h3>
+                    <p>Badan Ketahanan Pangan bertugas melaksanakan perumusan dan pelaksanaan kebijakan di bidang ketahanan pangan sesuai dengan ketentuan peraturan perundang-undangan.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-sitemap"></i>
+                    <h3>Struktur Organisasi</h3>
+                    <p>Struktur organisasi Dinas Ketahanan Pangan terdiri dari Kepala Badan, Sekretariat Utama, Deputi Bidang Ketersediaan dan Kerawanan Pangan, Deputi Bidang Distribusi dan Cadangan Pangan, serta Deputi Bidang Konsumsi dan Keamanan Pangan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2 class="section-title">Program Unggulan</h2>
+            <div class="program-cards">
+                <div class="program-card">
+                    <img src="https://picsum.photos/seed/foodprice/400/200.jpg" alt="Food Price Stability">
+                    <div class="program-card-content">
+                        <h3>Stabilitas Harga Pangan</h3>
+                        <p>Program untuk menjaga stabilitas harga pangan di pasaran melalui monitoring, analisis, dan intervensi pasar yang tepat waktu.</p>
+                        <a href="program-stabilitas.html" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="https://picsum.photos/seed/foodestate/400/200.jpg" alt="Food Estate">
+                    <div class="program-card-content">
+                        <h3>Food Estate</h3>
+                        <p>Pengembangan lumbung pangan nasional dengan integrasi dari hulu hingga hilir untuk meningkatkan produksi pangan secara berkelanjutan.</p>
+                        <a href="program-food-estate.html" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="https://picsum.photos/seed/foodreserve/400/200.jpg" alt="Food Reserves">
+                    <div class="program-card-content">
+                        <h3>Penguatan Cadangan Pangan</h3>
+                        <p>Meningkatkan kapasitas dan kualitas pengelolaan cadangan pangan pemerintah untuk mengantisipasi krisis pangan.</p>
+                        <a href="program-cadangan.html" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="https://picsum.photos/seed/foodsafety/400/200.jpg" alt="Food Safety">
+                    <div class="program-card-content">
+                        <h3>Pemantauan Keamanan Pangan</h3>
+                        <p>Sistem pengawasan dan penjaminan keamanan pangan dari produksi hingga konsumsi untuk melindungi kesehatan masyarakat.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="https://picsum.photos/seed/householdfood/400/200.jpg" alt="Household Food Security">
+                    <div class="program-card-content">
+                        <h3>Ketahanan Pangan Rumah Tangga</h3>
+                        <p>Program pemberdayaan masyarakat untuk meningkatkan akses dan ketersediaan pangan di tingkat rumah tangga.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="https://picsum.photos/seed/agritech/400/200.jpg" alt="Agricultural Technology">
+                    <div class="program-card-content">
+                        <h3>Inovasi Teknologi Pertanian</h3>
+                        <p>Pengembangan dan penerapan teknologi pertanian modern untuk meningkatkan produktivitas dan efisiensi produksi pangan.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+<section class="data-section" id="data">
+    <div class="container">
+        <h2 class="section-title">Data & Statistik Ketahanan Pangan</h2>
+        <div class="data-dashboard">
+            
+            <!-- Kartu Data -->
+            <div class="data-cards">
+                <div class="data-card">
+                    <h3>92.5%</h3>
+                    <p>Indeks Ketahanan Pangan Kota Ternate</p>
+                </div>
+                <div class="data-card">
+                    <h3>Rp 15,000/kg</h3>
+                    <p>Rata-rata Harga Beras</p>
+                </div>
+                <div class="data-card">
+                    <h3>8 Ribu Ton</h3>
+                    <p>Ketersediaan Stok Beras</p>
+                </div>
+                <div class="data-card">
+                    <h3>6 Ribu Ton</h3>
+                    <p>Cadangan Pangan</p>
+                </div>
+            </div>
+
+            <!-- Chart 1 -->
+            <div class="chart-container">
+                <canvas id="foodPriceChart"></canvas>
+            </div>
+
+            <!-- Chart 2 -->
+            <div class="chart-container">
+                <canvas id="foodAvailabilityChart"></canvas>
+            </div>
+
+        </div>
+    </div>
+		<div style="text-align:center; margin: 30px 0;">
+    <a href="informasi-harga.html" class="btn btn-primary" style="padding:12px 30px; font-size:1rem;">
+        Informasi Ketersediaan Pangan
+    </a>
+</div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <h2 class="section-title">Berita & Pengumuman</h2>
+            <div class="news-cards">
+                <div class="news-card">
+                    <img src="https://cdn.rri.co.id/berita/Ternate/o/1765196285096-1001341210/hqjwk8nzte0n4t9.jpeg" alt="News 1">
+                    <div class="news-card-content">
+                        <div class="news-date">08 Desember 2025</div>
+                        <h3>Bulog Ternate Jamin Ketahanan Stok Pangan Saat Nataru</h3>
+                        <p>KBRN, Ternate: Menjelang perayaan Natal dan Tahun Baru (Nataru) 2026, Perum Bulog Cabang Ternate memastikan ketersediaan stok pangan di Maluku Utara dalam kondisi aman. Kepala Bulog Cabang Ternate, Jefry Tanasy, mengungkapkan bahwa hingga Senin (8/12/2025), total stok beras yang tersedia mencapai 4.000 ton..</p>
+                        <a href="https://rri.co.id/maluku-utara/daerah/2028666/bulog-ternate-jamin-ketahanan-stok-pangan-saat-nataru" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://indotimur.com/images/2025/12/preview_erumjsxz_qwmf0jkb.jpeg" alt="News 2">
+                    <div class="news-card-content">
+                        <div class="news-date">5 Desember 2025</div>
+                        <h3>Sekda Ternate Buka Peluang Kerjasama Pengendalian Inflasi Pangan</h3>
+                        <p>Sekretaris Daerah (Sekda) Kota Ternate, Dr. Rizal Marsaoly, selaku Ketua Tim Pengendalian Inflasi Daerah (TPID) Kota Ternate, menghadiri kesepakatan Kerjasama Antar Daerah (KAD) antara Pemerintah Kota Ternate dan Pemerintah Kota Manado dalam rangka pengendalian inflasi pangan..</p>
+                        <a href="https://indotimur.com/ternate-andalan/sekda-ternate-buka-peluang-kerjasama-pengendalian-inflasi-pangan" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://picsum.photos/seed/news3/400/200.jpg" alt="News 3">
+                    <div class="news-card-content">
+                        <div class="news-date">10 Oktober 2023</div>
+                        <h3>Inovasi Teknologi Pertanian Digital untuk Petani Indonesia</h3>
+                        <p>Badan Ketahanan Pangan bekerja sama dengan Kementerian Riset dan Teknologi mengembangkan aplikasi mobile untuk membantu petani meningkatkan produktivitas.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#" class="btn btn-secondary">Lihat Semua Berita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Digital Publik</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Informasi Harga Pangan</h3>
+                    <p>Akses informasi harga pangan terkini di seluruh Indonesia secara real-time.</p>
+                    <a href="#" class="btn btn-primary">Akses Layanan</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Pendaftaran Distributor</h3>
+                    <p>Daftarkan perusahaan Anda sebagai distributor pangan resmi yang terverifikasi.</p>
+                    <a href="#" class="btn btn-primary">Akses Layanan</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Layanan Pengaduan Keamanan Pangan</h3>
+                    <p>Laporkan masalah keamanan pangan yang Anda temukan di pasaran.</p>
+                    <a href="#" class="btn btn-primary">Akses Layanan</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Pengajuan Sertifikasi</h3>
+                    <p>Ajukan sertifikasi keamanan dan kualitas produk pangan Anda.</p>
+                    <a href="#" class="btn btn-primary">Akses Layanan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Jati Permai, Jati Perumnas, Kec. Ternate Selatan, Kota Ternate, Maluku Utara</p>
+                    <p><i class="fas fa-clock"></i> Senin - Jumat: 08:00 - 16:00 WIB</p>
+                    <p><i class="fas fa-phone"></i> 0822-9004-8016</p>
+                    <p><i class="fas fa-envelope"></i> info@ketahananpangan.go.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#">Profil Lembaga</a></li>
+                        <li><a href="#">Program & Kegiatan</a></li>
+                        <li><a href="#">Data Ketahanan Pangan</a></li>
+                        <li><a href="#">Layanan Publik</a></li>
+                        <li><a href="#">Berita & Pengumuman</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Media Sosial</h3>
+                    <p>Ikuti kami di media sosial untuk mendapatkan informasi terbaru:</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Lokasi Kami</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.4546625506073!2d127.37249388180327!3d0.773589948151946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x329cb4053a3060e7%3A0xc8ace1cde12d8659!2sDinas%20Ketahanan%20Pangan%20Kota%20Ternate!5e0!3m2!1sid!2sid!4v1765003790888!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Dinas Ketahanan Pangan Kota Ternate. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
