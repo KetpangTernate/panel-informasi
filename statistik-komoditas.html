@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Statistik Komoditas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background:#f4f4f4; font-family:Arial, sans-serif;">
+
+    <section class="data-section" id="data-komoditas">
+        <div class="container" style="max-width:1100px; margin:auto; padding:20px;">
+
+            <h2 style="text-align:center; color:#2e7d32; font-size:32px; font-weight:700; margin-bottom:25px;">
+                Data & Statistik Komoditas Pangan
+            </h2>
+
+            <!-- Kartu Komoditas -->
+            <div style="display:flex; gap:15px; margin-bottom:25px; flex-wrap:wrap; justify-content:center;">
+                <div class="data-card" style="background:#2e7d32; color:white; padding:20px; border-radius:10px; width:230px; text-align:center;">
+                    <h3>Rp 15,000</h3>
+                    <p>Harga Beras / Kg</p>
+                </div>
+                <div class="data-card" style="background:#2e7d32; color:white; padding:20px; border-radius:10px; width:230px; text-align:center;">
+                    <h3>Rp 28,000</h3>
+                    <p>Harga Cabai Rawit / Kg</p>
+                </div>
+                <div class="data-card" style="background:#2e7d32; color:white; padding:20px; border-radius:10px; width:230px; text-align:center;">
+                    <h3>Rp 12,000</h3>
+                    <p>Harga Gula Pasir / Kg</p>
+                </div>
+                <div class="data-card" style="background:#2e7d32; color:white; padding:20px; border-radius:10px; width:230px; text-align:center;">
+                    <h3>Rp 30,000</h3>
+                    <p>Harga Telur / Rak</p>
+                </div>
+            </div>
+
+            <!-- Chart Harga Komoditas -->
+            <div style="background:white; padding:20px; border-radius:10px; margin-bottom:25px; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
+                <canvas id="komoditasHargaChart"></canvas>
+            </div>
+
+            <!-- Chart Ketersediaan Komoditas -->
+            <div style="background:white; padding:20px; border-radius:10px; margin-bottom:25px; box-shadow:0 3px 10px rgba(0,0,0,0.1);">
+                <canvas id="komoditasStokChart"></canvas>
+            </div>
+
+        </div>
+    </section>
+
+<script>
+// Grafik Harga Komoditas
+new Chart(document.getElementById("komoditasHargaChart"), {
+    type: "line",
+    data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt"],
+        datasets: [
+            {
+                label: "Harga Beras (Rp/kg)",
+                data: [12000, 12500, 13000, 12800, 13500, 14000, 13800, 14200, 14500, 15000],
+                fill: true,
+            },
+            {
+                label: "Harga Telur (Rp/kg)",
+                data: [22000, 23000, 24000, 23500, 24500, 25000, 24800, 25500, 26000, 26500],
+                fill: true,
+            }
+        ]
+    },
+    options: { responsive: true }
+});
+
+// Grafik Stok Komoditas
+new Chart(document.getElementById("komoditasStokChart"), {
+    type: "bar",
+    data: {
+        labels: ["Beras", "Jagung", "Kedelai", "Gula", "Minyak Goreng", "Daging Sapi", "Daging Ayam"],
+        datasets: [{
+            label: "Ketersediaan (Ribu Ton)",
+            data: [10, 18, 1, 3, 9, 0.5, 6],
+        }]
+    },
+    options: { responsive: true }
+});
+</script>
+
+</body>
+</html>
