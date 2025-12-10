@@ -1,0 +1,38 @@
+[
+  {
+    "judul": "Stabilitas Harga Pangan",
+    "deskripsi": "Program menjaga harga pangan tetap stabil.",
+    "gambar": "https://picsum.photos/seed/foodprice/400/200",
+    "link": "program-stabilitas.html"
+  },
+  {
+    "judul": "Food Estate",
+    "deskripsi": "Pengembangan area pangan berskala nasional.",
+    "gambar": "https://picsum.photos/seed/foodestate/400/200",
+    "link": "program-food-estate.html"
+  },
+  {
+    "judul": "Penguatan Cadangan Pangan",
+    "deskripsi": "Meningkatkan kapasitas cadangan pangan.",
+    "gambar": "https://picsum.photos/seed/foodreserve/400/200",
+    "link": "program-cadangan.html"
+  },
+  {
+    "judul": "Pemantauan Keamanan Pangan",
+    "deskripsi": "Mengawasi keamanan pangan nasional.",
+    "gambar": "https://picsum.photos/seed/foodsafety/400/200",
+    "link": "#"
+  },
+  {
+    "judul": "Ketahanan Pangan Rumah Tangga",
+    "deskripsi": "Pemberdayaan pangan keluarga.",
+    "gambar": "https://picsum.photos/seed/householdfood/400/200",
+    "link": "#"
+  },
+  {
+    "judul": "Inovasi Teknologi Pertanian",
+    "deskripsi": "Teknologi modern pertanian.",
+    "gambar": "https://picsum.photos/seed/agritech/400/200",
+    "link": "#"
+  }
+]

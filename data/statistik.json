@@ -1,0 +1,26 @@
+{
+  "produksi": [
+    [
+      "Tahun",
+      "Beras",
+      "Jagung"
+    ],
+    [
+      "2023",
+      120,
+      80
+    ]
+  ],
+  "konsumsi": [
+    [
+      "Tahun",
+      "Beras",
+      "Jagung"
+    ],
+    [
+      "2023",
+      110,
+      70
+    ]
+  ]
+}
